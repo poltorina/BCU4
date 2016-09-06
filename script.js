@@ -6,4 +6,19 @@ $(document).ready(function() {
 		let firstClass = $(this).attr('class').split(' ')[0];
 		$('#' + firstClass).removeClass('hidden');
 	})	
+
+	$('.partners .tabs li').click(function() {
+		if ($(this).hasClass('second-line')) {
+			$(".partners .tabs-panel .info-panel").css('top', '-275px');
+		} else {
+			$(".partners .tabs-panel .info-panel").css('top', '-260px');
+		}
+	});
+
+	$('#menu li a').click(function() {
+  		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top - 70;
+		$('body,html').animate({scrollTop: top}, 1200);
+	})
 });

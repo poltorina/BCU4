@@ -40,22 +40,24 @@ li {
     font-size: 13px;
 }
 
-.fixed-menu .logo {
+.fixed-menu .logo,
+.footer-menu .logo {
     position: relative;
 }
 
-.fixed-menu .logo img {
+.fixed-menu .logo img,
+.footer-menu .logo img {
     height: 37px;
 }
 
 .fixed-menu #menu {
     display: inline-block;
     vertical-align: top;
-    /*padding: 0 25px;*/
-    padding: 0;
+    padding: 0 25px;
 }
 
-.fixed-menu li {
+.fixed-menu li,
+.footer-menu li {
     list-style: none;
     display: inline-block;
     padding: 0px 5px;
@@ -68,19 +70,22 @@ li {
     color: #fff;
 }
 
-.fixed-menu .call {
+.fixed-menu .call,
+.footer-menu .call {
 	display: inline-block;
     vertical-align: top;
 }
 
-.fixed-menu .call li i {
+.fixed-menu .call li i,
+.footer-menu .call li i {
 	font-size: 22px;
 	color: #f2780c;
     padding-right: 5px;
     vertical-align: sub;
 }
 
-.fixed-menu .call li i.fa-mobile {
+.fixed-menu .call li i.fa-mobile,
+.footer-menu .call li i.fa-mobile {
             transform: skew(20deg);
     -webkit-transform: skew(20deg);
        -moz-transform: skew(20deg);
@@ -88,14 +93,15 @@ li {
         -ms-transform: skew(20deg);
 }
 
-.fixed-menu .call li .bigger {
+.fixed-menu .call li .bigger,
+.footer-menu .call li .bigger {
 	font-size: 1.15em;
 }
 
 .fixed-menu .call li img {
 	cursor: pointer;
     padding-top: 10px;
-    display: none;
+    /*display: none;*/
 }
 
 .top-block {
@@ -309,8 +315,16 @@ li {
     margin-bottom: 155px;
 }
 
-.partners .tabs li.first-line.active div {
+.partners .tabs li.active div {
     height: 75px;
+}
+
+.partners .tabs li.second-line.active {
+    top: -15px;
+}
+
+.partners .tabs li.second-line.active div {
+    padding-top: 15px;
 }
 
 .partners .tabs-panel {
@@ -320,17 +334,274 @@ li {
 .partners .tabs-panel .info-panel {
 	width: 100%;
 	max-width: 1000px;
-	height: 180px;
+	height: 176px;
 	background-color: #fff;
     position: absolute;
     top: -260px;
     color: #000;
 }
+
+.why-partners {
+	padding: 40px 15px;
+}
+
+.why-partners .list-why-we {
+	max-width: 1000px;
+	margin: 0 auto;
+    padding-left: 50px;
+}
+
+.why-partners .list-why-we li {
+    height: 60px;
+	width: calc(50% - 4px);
+	background: url(img/why-part-list.png) 0% 0% no-repeat;
+	display: inline-block;
+	vertical-align: top;
+    padding: 0 40px 0 60px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.steps {
+	height: 430px;
+	width: 100%;
+	position: relative;
+	padding: 40px 15px;
+	background: url(img/steps-bg.png) 50% no-repeat;
+	background-size: cover;
+}
+
+.steps .div-title {
+	color: #fff;
+}
+
+.steps img {
+	width: 100%;
+	max-width: 1000px;
+	padding-top: 30px;
+}
+
+.steps .list-steps {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.steps .list-steps li {
+	display: inline-block;
+	width: calc(20% - 4px);
+	vertical-align: top;
+	color: #fff;
+	font-size: 14px;
+}
+
+.steps .list-steps li:nth-child(4),
+.steps .list-steps li:nth-child(5) {
+	padding-left: 2%;
+}
+
+.spheres {
+	width: 100%;
+	padding: 40px 15px;
+}
+
+.spheres .spheres-list {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.spheres .spheres-list li {
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+    margin: 25px 0;
+}
+
+.spheres li p {
+	color: rgb(119, 119, 119);
+}
+
+.clients {
+	width: 100%;
+	padding: 40px 15px;
+	background-color: #eee;
+}
+
+.clients ul {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.clients ul li {
+	height: 115px;
+	margin-bottom: 1px;
+	margin-left: -3px;
+	display: inline-block;
+	vertical-align: top;
+	width: 196px;
+	background-color: #fff;
+}
+
+.clients ul li img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.reviews {
+	height: 370px;
+	padding: 40px 15px;
+	background: url(img/review-bg.png) 50% no-repeat;
+	background-size: cover;
+}
+
+.reviews .div-title {
+	color: #fff;
+}
+
+.reviews ul {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.reviews ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(33% - 4px);
+	padding-right: 10px;
+	text-align: left;
+	font-family: "Arial";
+}
+
+.reviews li img {
+	vertical-align: bottom;
+}
+
+.reviews li span {
+	font-size: 18px;
+	color: rgb(2, 160, 227);
+    display: inline-block;
+    width: calc(100% - 85px);
+    padding-left: 5px;
+	vertical-align: bottom;
+}
+
+.reviews li p {
+	font-size: 14px;
+	color: rgb(238, 238, 238);
+    padding-top: 17px;
+    line-height: 1.2;
+}
+
+.consultation {
+	height: 400px;
+	padding: 50px 15px;
+	background: url(img/consultation-bg.png) 50% no-repeat;
+	background-size: cover;
+}
+
+.consultation .div-title {
+	margin-bottom: 0;
+}
+
+.consultation p {
+	font-size: 18px;
+}
+
+.consultation input[type=text] {
+	width: 340px;
+	height: 42px;
+    padding: 10px;
+    text-align: center;
+	border: 1px solid #05a1e3;
+	box-shadow: 2px 2px 0 rgba(0, 0, 1, 0.6);
+	margin: 40px 20px 0 0;
+}
+
+
+.consultation input[type=submit] {
+	display: block;
+	margin: 0 auto;
+	width: 244px;
+	height: 44px;
+	background-color: #f2780c;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	font-family: "Arial";
+	font-weight: bold;
+	border-radius: 3px;
+	box-shadow: 5px 6px 3px 0px rgba(0, 0, 1, 0.6);
+	margin-top: 40px;
+}
+
+.footer-menu {
+    background-color: #eee;
+    width: 100%;
+    height: 120px;
+    padding: 40px 15px 15px;
+    color: #000;
+    font-size: 13px;
+}
+
+.footer-menu .footer-menu-wrap {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.footer-menu #menu {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px 0 50px;
+}
+
+.footer-menu li a {
+    display: inline-block;
+    color: #000;
+}
+
+.footer-menu .call {
+    padding-right: 15px;
+}
+
+.footer-menu .call li {
+    display: block;
+}
+
+.footer-menu .callback {
+	cursor: pointer;
+}
+
+.footer {
+    background-color: #eee;
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    border-top: 1px solid #aaa;
+	font-size: 12px;
+	color: rgb(34, 34, 34);
+}
+
+.footer p {
+	text-align: left;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
 @media screen and (min-width: 1030px) {
 	.partners .tabs-panel .info-panel {
     	left: calc(50% - 500px);
 	}
 }
+@media screen and (max-width: 1100px) {
+	
+}
+
 
 
 
