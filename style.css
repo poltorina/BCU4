@@ -50,7 +50,7 @@ li {
     height: 37px;
 }
 
-.fixed-menu #menu {
+.fixed-menu .menu {
     display: inline-block;
     vertical-align: top;
     padding: 0 25px;
@@ -101,7 +101,40 @@ li {
 .fixed-menu .call li img {
 	cursor: pointer;
     padding-top: 10px;
-    /*display: none;*/
+}
+
+.fixed-menu .mobile-menu-btn {
+	display: none;
+	background: #191d1f;
+	width: 50px;
+    height: 50px;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    left: 4%;
+    top: -5px;
+    position: relative;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.fixed-menu .mobile-menu-btn.active,
+.fixed-menu .mobile-menu-btn:hover {
+    color: #f2780c;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.fixed-menu .menu.active-mobile li
+.fixed-menu .call.active-mobile li {
+	display: block;
 }
 
 .top-block {
@@ -155,7 +188,7 @@ li {
 }
 
 .forma-block .forma-text {
-	width: 550px;
+	width: calc(100% - 400px);
 	color: rgb(51, 51, 51);
 	line-height: 1.2;
 	text-align: left;
@@ -599,9 +632,51 @@ li {
 	}
 }
 @media screen and (max-width: 1100px) {
-	
+	.fixed-menu .mobile-menu-btn {
+		display: block;
+	}
+	.fixed-menu .menu,
+	.fixed-menu .call {
+		display: none;
+	}
+	.menu.active-mobile,
+	.call.active-mobile {
+    	width: 250px;
+		display: block;
+		background-color: rgba(0, 0, 0, 0.75);
+	    z-index: 10;
+	    position: relative;
+	    top: 14px;
+	}
+	.fixed-menu .active-mobile li {
+		display: block;
+		padding: 5px;
+		margin: 0;
+	}
 }
-
+@media screen and (max-width: 950px) {
+	.footer-menu #menu {
+		padding: 0 15px 0 10px;
+	}
+	.top-block .black-block span {
+		font-size: 18px;
+	}
+	.top-block .black-block p {
+		width: 660px;
+	}
+	.forma-block .forma-text .big {
+		font-size: 20px;
+	}
+	.forma-block .forma-text p {
+		font-size: 20px;
+	}
+	.partners .tabs li div {
+		font-size: 14px;
+	}
+	.footer-menu {
+		height: auto;
+	}
+}
 
 
 

@@ -21,4 +21,12 @@ $(document).ready(function() {
 			top = $(id).offset().top - 70;
 		$('body,html').animate({scrollTop: top}, 1200);
 	})
+
+	//mobile menu-button
+	$('.mobile-menu-btn').click(function(e){
+		$(this).toggleClass('active');
+		$('.fixed-menu .menu, .fixed-menu .call').toggleClass('active-mobile');
+		e.preventDefault();
+		return false;
+	});
 });
