@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	//tabs
 	$('.partners .tabs li').click(function() {
 		$('.partners .tabs li').removeClass('active');
 		$('.info-panel').removeClass('active-tab');
@@ -8,7 +9,8 @@ $(document).ready(function() {
 		$('#' + firstClass).removeClass('hidden');
 		$('#' + firstClass).addClass('active-tab');
 	})
-
+	
+	//scroll to...
 	$('#menu li a').click(function() {
   		event.preventDefault();
 		var id  = $(this).attr('href'),
@@ -25,7 +27,7 @@ $(document).ready(function() {
 	});
 
 
-	
+	//close form
 	$('#overlay').click( function(){
 		$('.ask-question').animate({opacity: 0, top: '0%'}, 200, function(){
 	    	$(this).css('display', 'none'); 
@@ -33,7 +35,7 @@ $(document).ready(function() {
 		});
 	});
 
-
+	//open form
 	$('.callback').click(function() {
 		$('#overlay').fadeIn(400);
 		$('.ask-question').animate({opacity: 0, top: '0%'}, 200, function(){
